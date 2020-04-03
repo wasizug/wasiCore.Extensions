@@ -19,7 +19,7 @@ int: ToInt, ToIntNullable</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\licence.txt">
+    <None Include="https://github.com/wasizug/wasiCore.Extensions/blob/master/LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
