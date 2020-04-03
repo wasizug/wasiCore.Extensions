@@ -10,20 +10,12 @@ namespace wasiCore.Extensions
     {
         public static void Create(string directory)
         {
-            if (string.IsNullOrEmpty(Path.GetExtension(directory)))
-                directory += @"\";
-
-            var directoryPath = Path.GetDirectoryName(directory);
-            var dir = directoryPath?.Split('\\').First();
-
-            directoryPath?.Split('\\').Skip(1).ToList().ForEach(item =>
+            if (string.IsNullOrEmpty(directory) || Directory.Exists(directory))
             {
-                dir += $@"\{item}";
-                if (!Directory.Exists(dir))
-                {
-                    Directory.CreateDirectory(dir);
-                }
-            });
+                return;
+            }
+            
+            Directory.CreateDirectory(directory);
         }
 
 
