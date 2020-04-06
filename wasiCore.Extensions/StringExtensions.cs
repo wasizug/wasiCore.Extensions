@@ -67,6 +67,7 @@ namespace wasiCore.Extensions
         }
 
 
+
         /// <summary>
         /// Retrieves a substring from this instance. The substring starts at a specified character position and continues to the end of the string.
         /// </summary>
